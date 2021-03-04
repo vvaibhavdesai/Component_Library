@@ -1,0 +1,57 @@
+/* Avatar */
+
+.avatar-svg{
+    border:2px solid black;
+    vertical-align: baseline; /*can be edited as per need*/
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+}
+
+.alert{
+    border:1px solid black;
+    padding:20px;
+    width: 300px;
+}
+
+
+
+
+
+
+
+.nav{
+    border: 1px solid black;
+}
+
+.inline-list{
+    display:inline;
+    padding:6px;
+}
+
+.banner{
+    border: 1px solid black;
+    height:200px;
+    width:auto;
+}
+
+.card{
+    border:1px solid black;
+    height:250px;
+    max-width:250px;
+}
+
+.txt-card{
+    border:1px solid black;
+    max-height:250px;
+    max-width:250px;
+}
+.t-card{
+    border:1px solid black;
+    height:150px;
+    margin:0px;
+}
+.txt{
+    border:1px solid black;
+    height:100px;
+}
