@@ -199,18 +199,138 @@ body {
 
 .btn-home{
     border:transparent;
-    background-color:var(--primary-btn);
-    color: var(--dark-black-color);
-    cursor: pointer;
+    background-color:transparent;
+    color: var(--primary-btn);
+    /* cursor: pointer; */
     font-size: 30px;
+    /* text-decoration:none; */
 }
 .btn-bars{
     border:transparent;
     background-color:transparent;
     color: var(--primary-btn);
-    cursor: pointer;
+    /* cursor: pointer; */
     font-size: 30px;
 }
+.btn-trash{
+    border:transparent;
+    background-color:transparent;
+    color: var(--warning-font);
+    /* cursor: pointer; */
+    font-size: 30px;
+}
+.btn-close{
+    border:transparent;
+    background-color:transparent;
+    color: var(--link-btn);
+    /* cursor: pointer; */
+    font-size: 30px;
+}
+.btn-folder{
+    border:transparent;
+    background-color:transparent;
+    color: var(--secondary-btn);
+    /* cursor: pointer; */
+    font-size: 30px;
+}
+.btn-close{
+    border:transparent;
+    background-color:transparent;
+    color: var(--link-btn);
+    /* cursor: pointer; */
+    font-size: 30px;
+}
+.btn-plus-circle{
+    border:transparent;
+    background-color:transparent;
+    color: var(--secondary-btn);
+    /* cursor: pointer; */
+    font-size: 30px;
+}
+.btn-pencil{
+    border:transparent;
+    background-color:transparent;
+    color: var(--secondary-btn);
+    /* cursor: pointer; */
+    font-size: 30px;
+    
+}
+
+.card {
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-areas: 
+    "img sidetxt "
+    "img sidetxt "
+    "img sidetxt ";
+    height: 250px;
+    max-width:450px;
+    background-color: #515151;
+    color:white;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.horizontal-card-text{
+    grid-area: sidetxt;
+    position: relative;
+}
+.side-text{
+    padding-left:5px;
+}
+
+.link-in-action{
+    position: relative;
+    top:40%;
+    padding-left:5px;
+}
+.image-oncard{
+    height: 250px;
+    /* max-width: 250px; */
+    grid-area:img;
+}
+
+
+/* vertical card */
+.vertical-card {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction:column;
+    height: auto;
+    width:300px;
+    background-color: #515151;
+    color:white;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.vertical-img{
+    height: 250px;
+    max-width: 300px;
+
+}
+.vertical-card-txt {
+    /* border: 1px solid black; */
+    height:100%;
+    width:100%;
+    padding-left: 5px;
+    /* flex:auto; */
+}
+
+/* .txt-card {
+    border: 1px solid black;
+    max-height: 250px;
+    max-width: 250px;
+}
+
+.t-card {
+    border: 1px solid black;
+    height: 150px;
+    margin: 0px;
+}
+
+.txt {
+    border: 1px solid black;
+    height: 100px;
+} */
 
 
 .nav {
@@ -226,27 +346,4 @@ body {
     border: 1px solid black;
     height: 200px;
     width: auto;
-}
-
-.card {
-    border: 1px solid black;
-    height: 250px;
-    max-width: 250px;
-}
-
-.txt-card {
-    border: 1px solid black;
-    max-height: 250px;
-    max-width: 250px;
-}
-
-.t-card {
-    border: 1px solid black;
-    height: 150px;
-    margin: 0px;
-}
-
-.txt {
-    border: 1px solid black;
-    height: 100px;
 }
