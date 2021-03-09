@@ -23,6 +23,9 @@
     --primary-btn:#F48FB1;
     --secondary-btn:#67C0FA;
     --link-btn:#B56B00;
+    
+    /* card */
+    --card-background-color:#515151;
     /* fonts */
     /* font-family: 'Roboto', sans-serif;
     use 2 fonts as far as you can */
@@ -178,7 +181,7 @@ body {
 .primary-btn {
     border:0.5px solid var(--primary-btn);
     color:var(--primary-btn);
-    padding:1em 2em;
+    padding:0.7em 2em;
     background-color: transparent;
     border-radius: 2px;
     /* use em and rem isntead of px works best for both . */
@@ -187,14 +190,14 @@ body {
 .secondary-btn {
     border:0.5px solid var(--secondary-btn);
     color:var(--secondary-btn);
-    padding:10px 25px;
+    padding:0.7em 2em;
     background-color: transparent;
     border-radius: 2px;
 }
 .link-btn {
     border:0.5px solid var(--link-btn);
     color:var(--link-btn);
-    padding:10px 25px;
+    padding:0.7em 2em;
     background-color: transparent;
     border-radius: 2px;
 }
@@ -268,7 +271,7 @@ body {
     "img sidetxt ";
     height: 250px;
     max-width:450px;
-    background-color: #515151;
+    background-color:var(--card-background-color);
     color:white;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
@@ -300,7 +303,7 @@ body {
     flex-direction:column;
     height: auto;
     width:300px;
-    background-color: #515151;
+    background-color: var(--card-background-color);
     color:white;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
@@ -318,23 +321,61 @@ body {
     /* flex:auto; */
 }
 
-/* .txt-card {
+.txt-card {
     border: 1px solid black;
-    max-height: 250px;
-    max-width: 250px;
+    background-color:var(--card-background-color);
+    color:white;
+    padding:0.5em 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight:lighter;
+    height:100%;
+    max-width:300px;
+}
+.dismiss-card {
+    position:relative;
+    border: 1px solid black;
+    background-color:var(--card-background-color);
+    color:white;
+    padding:0.5em 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight:lighter;
+    height:100%;
+    max-width:300px;
+}
+.dismiss-img{
+    position:absolute;
+    height:1em;
+    top:0.5em;
+    right:0.5em;
 }
 
-.t-card {
+.card-with-badge {
+    position: relative;
     border: 1px solid black;
-    height: 150px;
-    margin: 0px;
+    background-color:var(--card-background-color);
+    color:white;
+    padding:2rem 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    height:100%;
+    max-width:300px;
 }
-
-.txt {
-    border: 1px solid black;
-    height: 100px;
-} */
-
+.cards{
+    border-radius: 5px;
+}
+.cards:hover{
+    background-color:black;
+    border-radius:10px;
+    
+}
+.discount-img{
+    position:relative;
+}
+.discount-badge{
+    position:absolute;
+    height:50px;
+    top:8%;
+    right:10% ;
+}
 
 .nav {
     border: 1px solid black;
