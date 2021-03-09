@@ -24,7 +24,9 @@
     --secondary-btn:#67C0FA;
     --link-btn:#B56B00;
     /* fonts */
-    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Roboto', sans-serif;
+    use 2 fonts as far as you can */
+    
 
 
 }
@@ -176,10 +178,10 @@ body {
 .primary-btn {
     border:0.5px solid var(--primary-btn);
     color:var(--primary-btn);
-    padding:5px 15px;
+    padding:10px 25px;
     background-color: transparent;
     border-radius: 2px;
-
+    /* use em and rem isntead of px works best for both . */
 }
 
 .secondary-btn {
@@ -202,8 +204,9 @@ body {
     background-color:transparent;
     color: var(--primary-btn);
     /* cursor: pointer; */
-    font-size: 30px;
-    /* text-decoration:none; */
+    font-size: 25px;
+    padding:0.7rem;
+    text-decoration:none;
 }
 .btn-bars{
     border:transparent;
@@ -311,7 +314,7 @@ body {
     /* border: 1px solid black; */
     height:100%;
     width:100%;
-    padding-left: 5px;
+    padding-left: 20px;
     /* flex:auto; */
 }
 
