@@ -162,8 +162,8 @@ body {
 .badge-on-avatar {
     border: 2px solid white;
     position: absolute;
-    top:1px;
-    left:2px;
+    bottom:0.5em;
+    left:2.5rem;
     border-radius: 50%;
     height: 10px;
     width: 10px;
@@ -178,7 +178,7 @@ body {
 .primary-btn {
     border:0.5px solid var(--primary-btn);
     color:var(--primary-btn);
-    padding:10px 25px;
+    padding:1em 2em;
     background-color: transparent;
     border-radius: 2px;
     /* use em and rem isntead of px works best for both . */
@@ -187,14 +187,14 @@ body {
 .secondary-btn {
     border:0.5px solid var(--secondary-btn);
     color:var(--secondary-btn);
-    padding:5px 15px;
+    padding:10px 25px;
     background-color: transparent;
     border-radius: 2px;
 }
 .link-btn {
     border:0.5px solid var(--link-btn);
     color:var(--link-btn);
-    padding:5px 15px;
+    padding:10px 25px;
     background-color: transparent;
     border-radius: 2px;
 }
@@ -206,7 +206,7 @@ body {
     /* cursor: pointer; */
     font-size: 25px;
     padding:0.7rem;
-    text-decoration:none;
+    /* text-decoration:none; */
 }
 .btn-bars{
     border:transparent;
