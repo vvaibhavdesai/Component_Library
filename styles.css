@@ -17,19 +17,19 @@
     --success-font: #B7DFB9;
 
     /* badge icon bgcolor*/
-    --badge-icon-bgcolor:#F48FB1;
+    --badge-icon-bgcolor: #F48FB1;
 
     /* button */
-    --primary-btn:#F48FB1;
-    --secondary-btn:#67C0FA;
-    --link-btn:#B56B00;
-    
+    --primary-btn: #F48FB1;
+    --secondary-btn: #67C0FA;
+    --link-btn: #B56B00;
+
     /* card */
-    --card-background-color:#515151;
+    --card-background-color: #515151;
     /* fonts */
     /* font-family: 'Roboto', sans-serif;
     use 2 fonts as far as you can */
-    
+
 
 
 }
@@ -128,22 +128,24 @@ body {
 
 /* badge */
 /* badge-on-icon */
-.icon-badge{
-    height:50px;
-    width:40px;
-    border:1px solid red;
+.icon-badge {
+    height: 50px;
+    width: 40px;
+    border: 1px solid red;
 }
-.icon-badge-image{
-    position:absolute;
-    height:25px;
+
+.icon-badge-image {
+    position: absolute;
+    height: 25px;
     padding-left: 5px;
 }
+
 .badge-on-icon {
     color: black;
     background-color: var(--badge-icon-bgcolor);
     position: relative;
-    bottom:7px;
-    left:18px;
+    bottom: 7px;
+    left: 18px;
     border-radius: 50%;
     padding-left: 5px;
     padding-right: 5px;
@@ -151,9 +153,10 @@ body {
 }
 
 /* badge-on-avatar */
-.avatar{
+.avatar {
     position: relative;
 }
+
 .avatar-svg {
     border: 2px solid white;
     vertical-align: baseline;
@@ -162,137 +165,149 @@ body {
     width: 50px;
     border-radius: 50%;
 }
+
 .badge-on-avatar {
     border: 2px solid white;
     position: absolute;
-    bottom:0.5em;
-    left:2.5rem;
+    bottom: 0.5em;
+    left: 2.5rem;
     border-radius: 50%;
     height: 10px;
     width: 10px;
 }
 
 /* button */
-.button-class  button {
-    font-weight:lighter;
+.button-class button {
+    font-weight: lighter;
 }
 
 
 .primary-btn {
-    border:0.5px solid var(--primary-btn);
-    color:var(--primary-btn);
-    padding:0.7em 2em;
+    border: 0.5px solid var(--primary-btn);
+    color: var(--primary-btn);
+    padding: 0.7em 2em;
     background-color: transparent;
     border-radius: 2px;
     /* use em and rem isntead of px works best for both . */
 }
 
 .secondary-btn {
-    border:0.5px solid var(--secondary-btn);
-    color:var(--secondary-btn);
-    padding:0.7em 2em;
-    background-color: transparent;
-    border-radius: 2px;
-}
-.link-btn {
-    border:0.5px solid var(--link-btn);
-    color:var(--link-btn);
-    padding:0.7em 2em;
+    border: 0.5px solid var(--secondary-btn);
+    color: var(--secondary-btn);
+    padding: 0.7em 2em;
     background-color: transparent;
     border-radius: 2px;
 }
 
-.btn-home{
-    border:transparent;
-    background-color:transparent;
+.link-btn {
+    border: 0.5px solid var(--link-btn);
+    color: var(--link-btn);
+    padding: 0.7em 2em;
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+.btn-home {
+    border: transparent;
+    background-color: transparent;
     color: var(--primary-btn);
     /* cursor: pointer; */
     font-size: 25px;
-    padding:0.7rem;
+    padding: 0.7rem;
     /* text-decoration:none; */
 }
-.btn-bars{
-    border:transparent;
-    background-color:transparent;
+
+.btn-bars {
+    border: transparent;
+    background-color: transparent;
     color: var(--primary-btn);
     /* cursor: pointer; */
     font-size: 30px;
 }
-.btn-trash{
-    border:transparent;
-    background-color:transparent;
+
+.btn-trash {
+    border: transparent;
+    background-color: transparent;
     color: var(--warning-font);
     /* cursor: pointer; */
     font-size: 30px;
 }
-.btn-close{
-    border:transparent;
-    background-color:transparent;
+
+.btn-close {
+    border: transparent;
+    background-color: transparent;
     color: var(--link-btn);
     /* cursor: pointer; */
     font-size: 30px;
 }
-.btn-folder{
-    border:transparent;
-    background-color:transparent;
+
+.btn-folder {
+    border: transparent;
+    background-color: transparent;
     color: var(--secondary-btn);
     /* cursor: pointer; */
     font-size: 30px;
 }
-.btn-close{
-    border:transparent;
-    background-color:transparent;
+
+.btn-close {
+    border: transparent;
+    background-color: transparent;
     color: var(--link-btn);
     /* cursor: pointer; */
     font-size: 30px;
 }
-.btn-plus-circle{
-    border:transparent;
-    background-color:transparent;
+
+.btn-plus-circle {
+    border: transparent;
+    background-color: transparent;
     color: var(--secondary-btn);
     /* cursor: pointer; */
     font-size: 30px;
 }
-.btn-pencil{
-    border:transparent;
-    background-color:transparent;
+
+.btn-pencil {
+    border: transparent;
+    background-color: transparent;
     color: var(--secondary-btn);
     /* cursor: pointer; */
     font-size: 30px;
-    
+
 }
 
 .card {
     /* border: 1px solid black; */
     display: grid;
-    grid-template-areas: 
-    "img sidetxt "
-    "img sidetxt "
-    "img sidetxt ";
+    grid-template-areas:
+        "img sidetxt "
+        "img sidetxt "
+        "img sidetxt ";
     height: 250px;
-    max-width:450px;
-    background-color:var(--card-background-color);
-    color:white;
+    max-width: 450px;
+    background-color: var(--card-background-color);
+    color: white;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
-.horizontal-card-text{
+
+.horizontal-card-text {
     grid-area: sidetxt;
     position: relative;
 }
-.side-text{
-    padding-left:5px;
+
+.side-text {
+    padding-left: 5px;
 }
 
-.link-in-action{
+.link-in-action {
     position: relative;
-    top:40%;
-    padding-left:5px;
+    top: 40%;
+    padding-left: 5px;
 }
-.image-oncard{
+
+.image-oncard {
     height: 250px;
     /* max-width: 250px; */
-    grid-area:img;
+    grid-area: img;
 }
 
 
@@ -300,81 +315,126 @@ body {
 .vertical-card {
     /* border: 1px solid black; */
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     height: auto;
-    width:300px;
+    width: 300px;
     background-color: var(--card-background-color);
-    color:white;
+    color: white;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
-.vertical-img{
+
+.vertical-img {
     height: 250px;
     max-width: 300px;
 
 }
+
 .vertical-card-txt {
     /* border: 1px solid black; */
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     padding-left: 20px;
     /* flex:auto; */
 }
 
 .txt-card {
-    border: 1px solid black;
-    background-color:var(--card-background-color);
-    color:white;
-    padding:0.5em 2em;
+    /* border: 1px solid rgb(122, 45, 45); */
+    background-color: var(--card-background-color);
+    color: white;
+    padding: 0.5em 2em;
     font-family: 'Roboto', sans-serif;
-    font-weight:lighter;
-    height:100%;
-    max-width:300px;
+    font-weight: lighter;
+    height: 100%;
+    max-width: 300px;
 }
+
 .dismiss-card {
-    position:relative;
-    border: 1px solid black;
-    background-color:var(--card-background-color);
-    color:white;
-    padding:0.5em 2em;
+    position: relative;
+    /* border: 1px sol  id black; */
+    background-color: var(--card-background-color);
+    color: white;
+    padding: 0.5em 2em;
     font-family: 'Roboto', sans-serif;
-    font-weight:lighter;
-    height:100%;
-    max-width:300px;
+    font-weight: lighter;
+    height: 100%;
+    max-width: 300px;
 }
-.dismiss-img{
-    position:absolute;
-    height:1em;
-    top:0.5em;
-    right:0.5em;
+
+.dismiss-img {
+    position: absolute;
+    height: 1em;
+    top: 0.5em;
+    right: 0.5em;
 }
 
 .card-with-badge {
     position: relative;
-    border: 1px solid black;
-    background-color:var(--card-background-color);
-    color:white;
-    padding:2rem 1.5rem;
+    /* border: 1px solid black; */
+    background-color: var(--card-background-color);
+    color: white;
+    padding: 2rem 1.5rem;
     font-family: 'Roboto', sans-serif;
-    height:100%;
-    max-width:300px;
+    height: 100%;
+    max-width: 300px;
 }
-.cards{
+
+.cards {
     border-radius: 5px;
 }
-.cards:hover{
-    background-color:black;
-    border-radius:10px;
-    
+
+.cards:hover {
+    background-color: black;
+    border-radius: 10px;
+
 }
-.discount-img{
-    position:relative;
+
+.discount-img {
+    position: relative;
 }
-.discount-badge{
-    position:absolute;
-    height:50px;
-    top:8%;
-    right:10% ;
+
+.discount-badge {
+    position: absolute;
+    height: 50px;
+    top: 8%;
+    right: 10%;
+}
+
+/* input tags */
+.input-box {
+    height: 2em;
+    background-color: transparent;
+    outline: 0;
+    border-width: 0 2px 2px 0;
+    color: white;
+}
+
+.input-box:hover {
+    border-color: white;
+    outline: 0;
+}
+
+.input-box:focus {
+    border-color: var(--info-font);
+
+}
+
+.validation-box {
+    height: 2em;
+    background-color: transparent;
+    outline: 0;
+    border-width: 0 2px 2px 0;
+    color: red;
+}
+
+.validation-box:hover {
+    /* border-color:red; */
+    outline: 0;
+}
+
+.validation-box:focus {
+    border-color: red;
+
 }
 
 .nav {
