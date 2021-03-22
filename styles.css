@@ -42,23 +42,32 @@ body {
 
 /* Avatar */
 .avatar-svg {
-    border: 2px solid black;
+    border: 2px solid white;
     vertical-align: baseline;
     /*can be edited as per need*/
-    height: 50px;
-    width: 50px;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
+}
+.medium{
+    height: 2.5rem;
+    width:2.5rem;
+
+}
+.small{
+    height:1.5rem;
+    width:1.5rem;
 }
 
 /* alert */
 .alert {
-    padding: 4px;
-    vertical-align: middle;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: medium;
-    max-width: 400px;
+    max-width: 30rem;
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .error-alert {
@@ -68,13 +77,13 @@ body {
 
 .error-alert-image {
     vertical-align: middle;
-    height: 20px;
-    padding: 7px;
+    height: 1.5rem;
+    padding: 0.5rem;
     /* background-color:var(--warning-alert); */
 }
 
 .error-txt {
-    padding-left: 7px;
+    padding-left: 0.5rem;
 }
 
 .warning-alert {
@@ -84,13 +93,13 @@ body {
 
 .warning-alert-image {
     vertical-align: middle;
-    height: 25px;
-    padding: 7px;
+    height: 1.5rem;
+    padding: 0.5rem;
     background-color: var(--warning-alert);
 }
 
 .warning-txt {
-    padding-left: 1px;
+    padding-left: 0.5rem;
 }
 
 .info-alert {
@@ -100,14 +109,14 @@ body {
 
 .info-alert-image {
     vertical-align: middle;
-    padding: 7px;
-    height: 18px;
+    padding: 0.5rem;
+    height: 1.5rem;
     /* width:auto; */
     /* background-color:var(--warning-alert); */
 }
 
 .info-txt {
-    padding-left: 7px;
+    padding-left: 0.5rem;
 }
 
 .success-alert {
@@ -117,38 +126,38 @@ body {
 
 .success-alert-image {
     vertical-align: middle;
-    height: 20px;
-    padding: 7px;
+    height: 1.5rem;
+    padding: 0.5rem;
     /* background-color:var(--success-alert); */
 }
 
 .success-txt {
-    padding-left: 7px;
+    padding-left: 0.5rem;
 }
 
 /* badge */
 /* badge-on-icon */
 .icon-badge {
-    height: 50px;
-    width: 40px;
+    height: 4rem;
+    width: 4rem;
     border: 1px solid red;
 }
 
 .icon-badge-image {
     position: absolute;
-    height: 25px;
-    padding-left: 5px;
+    height: 2rem;
+    padding-left: 0.5rem;
 }
 
 .badge-on-icon {
     color: black;
     background-color: var(--badge-icon-bgcolor);
     position: relative;
-    bottom: 7px;
-    left: 18px;
+    bottom: 0.5em;
+    left: 1.5em;;
     border-radius: 50%;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     text-align: center;
 }
 
@@ -157,123 +166,149 @@ body {
     position: relative;
 }
 
-.avatar-svg {
-    border: 2px solid white;
-    vertical-align: baseline;
-    /*can be edited as per need*/
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
+
 
 .badge-on-avatar {
-    border: 2px solid white;
+    border:2px solid var(--dark-black-color);
     position: absolute;
-    bottom: 0.5em;
-    left: 2.5rem;
+    bottom: 0.4em;
+    left: 3rem;
     border-radius: 50%;
-    height: 10px;
-    width: 10px;
+    height: 0.7rem;
+    width: 0.7rem;
+    background-color: rgb(21, 231, 21);
+}
+
+.badge-on-avatar-offline{
+    border:2px solid var(--dark-black-color);
+    position: absolute;
+    bottom: 0.4em;
+    left: 3rem;
+    border-radius: 50%;
+    height: 0.7rem;
+    width: 0.7rem;
+    background-color:red;
 }
 
 /* button */
-.button-class button {
-    font-weight: lighter;
-}
-
 
 .primary-btn {
-    border: 0.5px solid var(--primary-btn);
+    border: 1px solid var(--primary-btn);
     color: var(--primary-btn);
-    padding: 0.7em 2em;
+    padding: 0.7rem 2rem;
+    cursor: pointer;
     background-color: transparent;
     border-radius: 2px;
+    outline:none;
     /* use em and rem isntead of px works best for both . */
 }
 
 .secondary-btn {
-    border: 0.5px solid var(--secondary-btn);
+    border: 1px solid var(--secondary-btn);
     color: var(--secondary-btn);
-    padding: 0.7em 2em;
+    padding: 0.7rem 2rem;
+    cursor: pointer;
     background-color: transparent;
     border-radius: 2px;
+    outline:none;
 }
 
 .link-btn {
-    border: 0.5px solid var(--link-btn);
+    border: 1px solid var(--link-btn);
     color: var(--link-btn);
-    padding: 0.7em 2em;
+    padding: 0.7rem 2rem;
+    cursor: pointer;
     background-color: transparent;
     border-radius: 2px;
+    outline:none;
 }
 
 .btn-home {
     border: transparent;
     background-color: transparent;
     color: var(--primary-btn);
-    /* cursor: pointer; */
-    font-size: 25px;
-    padding: 0.7rem;
-    /* text-decoration:none; */
+    cursor: pointer;
+    font-size: 2rem;
+    padding:0.5rem;    
+    outline:none;
 }
 
 .btn-bars {
     border: transparent;
     background-color: transparent;
     color: var(--primary-btn);
-    /* cursor: pointer; */
-    font-size: 30px;
+    cursor: pointer;
+    font-size: 2rem;
+    padding:0.5rem;
+    outline:none;
 }
 
 .btn-trash {
     border: transparent;
     background-color: transparent;
     color: var(--warning-font);
-    /* cursor: pointer; */
-    font-size: 30px;
+    cursor: pointer;
+    font-size: 2rem;
+    padding:0.5rem;
+    outline:none;
 }
 
 .btn-close {
     border: transparent;
     background-color: transparent;
     color: var(--link-btn);
-    /* cursor: pointer; */
-    font-size: 30px;
+    cursor: pointer;
+    font-size: 2rem;
+    padding:0.5rem;
+    outline:none;
 }
 
 .btn-folder {
     border: transparent;
     background-color: transparent;
     color: var(--secondary-btn);
-    /* cursor: pointer; */
-    font-size: 30px;
+    cursor: pointer;
+    font-size: 2rem;
+    padding:0.5rem;
+    outline:none;
 }
 
 .btn-close {
     border: transparent;
     background-color: transparent;
     color: var(--link-btn);
-    /* cursor: pointer; */
-    font-size: 30px;
+    cursor: pointer;
+    font-size: 2rem;
+    padding:0.5rem;
+    outline:none;
 }
 
 .btn-plus-circle {
     border: transparent;
     background-color: transparent;
     color: var(--secondary-btn);
-    /* cursor: pointer; */
-    font-size: 30px;
+    cursor: pointer;
+    font-size: 2rem;
+    padding:0.5rem;
+    outline:none;
 }
 
 .btn-pencil {
     border: transparent;
     background-color: transparent;
     color: var(--secondary-btn);
-    /* cursor: pointer; */
-    font-size: 30px;
+    cursor: pointer;
+    font-size: 2rem;
+    padding:0.5rem;
+    outline:none;
 
 }
-
+.btn:active { 
+    transform: scale(0.90); 
+    /* Scaling button to 0.98 to its original size */ 
+    box-shadow: 3px 2px 22px 1px rgba(255, 255, 255, 0.24); 
+    outline:none;
+}
 .card {
     /* border: 1px solid black; */
     display: grid;
@@ -281,34 +316,35 @@ body {
         "img sidetxt "
         "img sidetxt "
         "img sidetxt ";
-    height: 250px;
-    max-width: 450px;
+    height: 15rem;
+    max-width: 30rem;
     background-color: var(--card-background-color);
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Roboto', sans-serif;
 }
 
 .horizontal-card-text {
     grid-area: sidetxt;
-    position: relative;
+    position: absolute;
 }
-
+.image-oncard {
+    height: 15rem;
+    max-width:10rem;
+    width:100%;
+    grid-area: img;
+}
 .side-text {
-    padding-left: 5px;
+    padding-left:1rem;
 }
 
 .link-in-action {
     position: relative;
-    top: 40%;
-    padding-left: 5px;
+    top:10%;
+    padding-left: 1rem;
 }
 
-.image-oncard {
-    height: 250px;
-    /* max-width: 250px; */
-    grid-area: img;
-}
+
 
 
 /* vertical card */
@@ -317,7 +353,7 @@ body {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 300px;
+    max-width: 20rem;
     background-color: var(--card-background-color);
     color: white;
     font-size: 16px;
@@ -326,15 +362,15 @@ body {
 
 .vertical-img {
     height: 250px;
-    max-width: 300px;
+    width: 100%;
 
 }
 
 .vertical-card-txt {
     /* border: 1px solid black; */
     height: 100%;
-    width: 100%;
-    padding-left: 20px;
+    max-width:20rem;
+    padding: 1rem;
     /* flex:auto; */
 }
 
@@ -438,14 +474,31 @@ body {
 }
 
 .nav {
-    border: 1px solid black;
+    padding:1rem;
+    background-color:#064273;
+    color:#CBD1D5;
+    display:flex;
+    align-items:center;
 }
 
 .inline-list {
-    display: inline;
-    padding: 6px;
-}
+    display:inline-block;
+    padding: 0 1rem 0 1rem;
 
+}
+.navbar-set{
+    al;
+    
+}
+.navbar-search{
+    background-color:#0B385D;
+    outline:0;
+    border-width:0px;
+    color:#ffff;
+}
+.navbar-search:focus{
+    padding-left:1rem;
+}
 .banner {
     border: 1px solid black;
     height: 200px;
