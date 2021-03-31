@@ -30,10 +30,13 @@
     /* font-family: 'Roboto', sans-serif;
     use 2 fonts as far as you can */
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: var(--dark-black-color);
     /* color:#fff; */
+    font-family: 'Roboto', sans-serif;
     margin:0;padding:0;
 }
 
@@ -134,6 +137,16 @@ body {
     border-radius: 0.5rem;
     padding: 0.5rem;
     cursor: pointer;
+}
+
+.nav a{
+    color:white;
+    text-decoration: none;
+}
+
+.active-link{
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .search-icon:active {
@@ -342,7 +355,10 @@ body {
     border-radius: 2px;
     outline: none;
 }
-
+.secondary-btn a{
+    text-decoration: none;
+    color:var(--info-font);
+}
 .btn-home {
     border: transparent;
     background-color: transparent;
